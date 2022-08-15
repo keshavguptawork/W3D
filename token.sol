@@ -2,9 +2,9 @@
 pragma solidity ^0.8.16;
 import 'https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol';
 
-contract W3D is ERC20 {
+contract W3IT is ERC20 {
     address public admin;
-    constructor() ERC20('W3D', 'W3D') {
+    constructor() ERC20('W3IntToken', 'W3IT') {
         _mint(msg.sender, 10000 * 10 ** 18);
         admin = msg.sender;
     }
